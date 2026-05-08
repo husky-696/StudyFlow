@@ -15,6 +15,28 @@ Less time navigating dashboards. More time learning.
 
 ---
 
+## 🖥️ Terminal Interface Preview
+
+StudyFlow features a custom-designed, premium interactive command-line dashboard that operates right inside your terminal:
+
+```text
+  ╭────────────────────────────────────────────────────────╮
+  │  StudyFlow ◆ v1.1.3         Canvas Learning Companion  │
+  ╰────────────────────────────────────────────────────────╯
+
+  📅  Weekly Learning Timeline
+  W01 ●  W02 ●  W03 ▲  W04 🔒  W05 ●  W06 ●  W07 ▲  W08 ✓
+
+  Select a command action to begin:
+  ● Sequential Course Sweep (Process enabled courses in order)
+  ○ Single Course Session
+  ○ Target One Lesson
+  ○ Configure Courses
+  ○ Exit
+```
+
+---
+
 ## About
 
 StudyFlow is a productivity assistant that automates lecture management on Canvas LMS. Instead of manually tracking videos across courses, StudyFlow organizes your study workflow—so you spend less time managing dashboards and more time actually learning.
