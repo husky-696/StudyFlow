@@ -54,34 +54,136 @@ Simple menu-driven interface. No coding needed.
 
 ## Installation
 
-### Step 1: Install Node.js
+Choose your operating system below and follow the steps:
 
-**Windows:**
+---
+
+### 🪟 Windows
+
+#### Step 1: Install Node.js
+
+**Option A: Using Winget (Recommended)**
 ```bash
 winget install OpenJS.NodeJS.LTS
 ```
 
-**macOS:**
-Visit [nodejs.org](https://nodejs.org) and download the LTS installer.
+**Option B: Manual Download**
+1. Visit [nodejs.org](https://nodejs.org)
+2. Click the green **"LTS"** button
+3. Double-click the `.msi` file that downloads
+4. Click **"Next"** through all prompts (keep defaults)
+5. Click **"Install"** and wait for completion
 
-**Linux:**
-```bash
-sudo apt update && sudo apt install -y nodejs npm
-```
+#### Step 2: Open PowerShell
 
-### Step 2: Install StudyFlow
+1. Press the **Windows key** on your keyboard
+2. Type `PowerShell`
+3. Click **"Windows PowerShell"** to open
+
+#### Step 3: Install StudyFlow
 
 ```bash
 npm install -g studyflow-bot
 ```
 
-### Step 3: Launch
+Wait for installation to complete (you'll see progress bars).
+
+#### Step 4: Launch
 
 ```bash
 studyflow
 ```
 
-That's it. Follow the on-screen prompts.
+Done! Follow the on-screen setup wizard.
+
+---
+
+### 🍎 macOS (Intel & Apple Silicon)
+
+#### Step 1: Install Node.js
+
+**Option A: Using Homebrew (Recommended)**
+
+If you don't have Homebrew installed, first run:
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then install Node.js:
+```bash
+brew install node
+```
+
+**Option B: Manual Download**
+1. Visit [nodejs.org](https://nodejs.org)
+2. Click the green **"LTS"** button
+3. Choose the macOS installer for your chip:
+   - **Intel Chip:** Download the `.pkg` file labeled "Intel"
+   - **Apple Silicon (M1/M2/M3):** Download the `.pkg` file labeled "Apple Silicon"
+4. Double-click the downloaded `.pkg` file
+5. Click **"Continue"** and follow the prompts
+6. Click **"Install"** and enter your Mac password if prompted
+
+#### Step 2: Open Terminal
+
+1. Press `Cmd + Space` on your keyboard
+2. Type `Terminal`
+3. Press `Enter`
+
+#### Step 3: Install StudyFlow
+
+```bash
+npm install -g studyflow-bot
+```
+
+Wait for installation to complete.
+
+#### Step 4: Launch
+
+```bash
+studyflow
+```
+
+Done! Follow the on-screen setup wizard.
+
+---
+
+### 🐧 Linux
+
+#### Step 1: Install Node.js
+
+**Ubuntu / Debian:**
+```bash
+sudo apt update
+sudo apt install -y nodejs npm
+```
+
+**Fedora / RHEL / CentOS:**
+```bash
+sudo dnf install -y nodejs npm
+```
+
+**Arch Linux:**
+```bash
+sudo pacman -S nodejs npm
+```
+
+**Other Distributions:**
+Visit the [Node.js package manager guide](https://nodejs.org/en/download/package-manager/) for your distro.
+
+#### Step 2: Install StudyFlow
+
+```bash
+npm install -g studyflow-bot
+```
+
+#### Step 3: Launch
+
+```bash
+studyflow
+```
+
+Done! Follow the on-screen setup wizard.
 
 ---
 
@@ -230,7 +332,13 @@ studyflow
 ## Troubleshooting
 
 **Q: How do I check if Node.js is installed?**  
-A: Run `node --version` in your terminal.
+A: Run `node --version` in your terminal. You should see a version number like `v18.0.0` or higher.
+
+**Q: I get "command not found: studyflow"**  
+A: Node.js or npm wasn't installed properly. Try:
+- Windows: Close PowerShell and reopen it
+- macOS/Linux: Close Terminal and reopen it
+- Run `npm install -g studyflow-bot` again
 
 **Q: StudyFlow crashed. How do I recover?**  
 A: Just run `studyflow` again. It picks up exactly where it left off.
@@ -249,6 +357,9 @@ A: No. It needs an internet connection to authenticate and stream lectures.
 
 **Q: What if my institution uses a different LMS?**  
 A: StudyFlow currently supports Canvas only. Contact your administrator about other platforms.
+
+**Q: My Mac says "app can't be opened because it's from an unidentified developer"**  
+A: Right-click the file, click "Open," then click "Open" again in the popup.
 
 **Q: Why is some code private?**  
 A: See the [Source Availability](#source-availability) section above.
