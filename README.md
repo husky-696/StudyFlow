@@ -5,7 +5,7 @@
     <strong>✨ A beautiful, automated Canvas LMS lecture companion designed for students. ✨</strong>
   </p>
   <p align="center">
-    <i>StudyFlow automatically plays and tracks your online e-Class lectures so you can focus on real studying, note-taking, and keeping your learning ledger 100% complete with zero manual clicking.</i>
+    <i>StudyFlow automatically plays and tracks your online e-Class lectures so you can focus on real studying, note-taking, and keeping your learning ledger 100% complete with zero manual clicking[...]
   </p>
 </div>
 
@@ -60,7 +60,7 @@ All without requiring any manual clicking or coding knowledge!
 
 Before installing StudyFlow, ensure you have:
 
-- **Node.js** (v14 or higher) - A free runtime environment for JavaScript applications
+- **Node.js** (v14 or higher) OR **Bun** - A free runtime environment for JavaScript applications
 - **Active Canvas LMS Account** - Your student credentials for your institution
 - **License Key** - Provided by your administrator
 - **Stable Internet Connection**
@@ -70,6 +70,8 @@ Before installing StudyFlow, ensure you have:
 ## 🚀 Installation
 
 ### 🪟 Windows
+
+#### Option 1: Using npm
 
 1. **Install Node.js:**
    - Visit the **[Official Node.js Website](https://nodejs.org/)**
@@ -92,9 +94,32 @@ Before installing StudyFlow, ensure you have:
    studyflow
    ```
 
+#### Option 2: Using Bun
+
+1. **Install Bun:**
+   - Visit the **[Official Bun Website](https://bun.sh/)**
+   - Download the Windows installer
+   - Follow the installation wizard
+
+2. **Open PowerShell:**
+   - Press the **Windows** key on your keyboard
+   - Search for **"PowerShell"** and open **"Windows PowerShell"**
+
+3. **Install StudyFlow:**
+   ```bash
+   bun install -g studyflow-bot
+   ```
+
+4. **Launch StudyFlow:**
+   ```bash
+   studyflow
+   ```
+
 ---
 
 ### 🍎 macOS
+
+#### Option 1: Using npm
 
 1. **Install Node.js:**
    - Visit the **[Official Node.js Website](https://nodejs.org/)**
@@ -116,9 +141,32 @@ Before installing StudyFlow, ensure you have:
    studyflow
    ```
 
+#### Option 2: Using Bun
+
+1. **Install Bun:**
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
+2. **Open Terminal:**
+   - Press `Cmd + Space` to open Spotlight Search
+   - Type **"Terminal"** and press `Enter`
+
+3. **Install StudyFlow:**
+   ```bash
+   bun install -g studyflow-bot
+   ```
+
+4. **Launch StudyFlow:**
+   ```bash
+   studyflow
+   ```
+
 ---
 
 ### 🐧 Linux
+
+#### Option 1: Using npm
 
 1. **Install Node.js (Ubuntu/Debian):**
    ```bash
@@ -137,6 +185,23 @@ Before installing StudyFlow, ensure you have:
    ```
 
 For other Linux distributions, refer to the **[Node.js official documentation](https://nodejs.org/en/download/package-manager/)**.
+
+#### Option 2: Using Bun
+
+1. **Install Bun:**
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
+2. **Install StudyFlow:**
+   ```bash
+   bun install -g studyflow-bot
+   ```
+
+3. **Launch StudyFlow:**
+   ```bash
+   studyflow
+   ```
 
 ---
 
@@ -221,17 +286,31 @@ Yes. StudyFlow was designed from the ground up with security and privacy as core
 
 ## ❓ Troubleshooting & FAQ
 
-#### Q: How do I check if Node.js is installed?
+#### Q: How do I check if Node.js or Bun is installed?
 **A:**
+
+**For Node.js:**
 ```bash
 node --version
 npm --version
 ```
 
+**For Bun:**
+```bash
+bun --version
+```
+
 #### Q: How do I uninstall StudyFlow?
 **A:**
+
+**Using npm:**
 ```bash
 npm uninstall -g studyflow-bot
+```
+
+**Using Bun:**
+```bash
+bun remove -g studyflow-bot
 ```
 
 #### Q: StudyFlow crashes or exits unexpectedly. What should I do?
@@ -269,6 +348,7 @@ npm uninstall -g studyflow-bot
 ## 📚 Additional Resources
 
 - **[Node.js Official Website](https://nodejs.org/)** – Download and learn about Node.js
+- **[Bun Official Website](https://bun.sh/)** – Download and learn about Bun
 - **[Canvas LMS Documentation](https://community.canvaslms.com/)** – Information about Canvas
 - **[GitHub Repository](https://github.com/husky-696/StudyFlow)** – Source code and issue tracking
 
@@ -280,8 +360,15 @@ npm uninstall -g studyflow-bot
 2. **Stable Connection:** Ensure your internet connection is stable before starting a large video sweep
 3. **Keep Headless On:** Use headless mode (default) to avoid distractions while working
 4. **Regular Updates:** Periodically update StudyFlow to get bug fixes and improvements:
+   
+   **Using npm:**
    ```bash
    npm install -g studyflow-bot@latest
+   ```
+   
+   **Using Bun:**
+   ```bash
+   bun install -g studyflow-bot@latest
    ```
 
 ---
