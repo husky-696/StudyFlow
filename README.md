@@ -1,443 +1,194 @@
 <div align="center">
 
-# StudyFlow CLI
+# 🌌 StudyFlow
 
-### Workflow automation for Canvas LMS
+### Premium Workflow Automation Companion for Canvas LMS
 
-Less time navigating dashboards. More time learning.
+*Less time navigating repetitive dashboards. More time focusing on what matters.*
 
-[![npm version](https://img.shields.io/npm/v/studyflow-bot.svg?style=flat-square)](https://www.npmjs.com/package/studyflow-bot)
-[![npm downloads](https://img.shields.io/npm/dm/studyflow-bot.svg?style=flat-square)](https://www.npmjs.com/package/studyflow-bot)
-[![Node.js](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=flat-square)](https://nodejs.org/)
-[![License](https://img.shields.io/badge/license-proprietary-blue.svg?style=flat-square)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/studyflow-bot.svg?style=for-the-badge&color=8a2be2)](https://www.npmjs.com/package/studyflow-bot)
+[![npm downloads](https://img.shields.io/npm/dm/studyflow-bot.svg?style=for-the-badge&color=ff69b4)](https://www.npmjs.com/package/studyflow-bot)
+[![Node.js Compatibility](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=for-the-badge)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/license-proprietary-blue.svg?style=for-the-badge)](LICENSE)
 
 </div>
 
 ---
 
-## 🖥️ Terminal Interface Preview
+## 🎨 Dual-Interface Experience
 
-StudyFlow features a custom-designed, premium interactive command-line dashboard that operates right inside your terminal:
+StudyFlow gives you the freedom to choose your workflow. Toggle between a **premium interactive CLI** and a **sleek Glassmorphism Web Dashboard** in a single click.
+
+### 1. The Interactive CLI Terminal
+Operating with zero lag, our custom command terminal provides a gorgeous color-coded dashboard featuring custom violet and pink themes to control all automation tasks.
 
 ```text
   ╭────────────────────────────────────────────────────────╮
-  │  StudyFlow ◆ v1.1.3         Canvas Learning Companion  │
+  │  StudyFlow ◆ v1.2.2         Canvas Learning Companion  │
   ╰────────────────────────────────────────────────────────╯
 
-  📅  Weekly Learning Timeline
-  W01 ●  W02 ●  W03 ▲  W04 🔒  W05 ●  W06 ●  W07 ▲  W08 ✓
-
-  Select a command action to begin:
-  ● Sequential Course Sweep (Process enabled courses in order)
-  ○ Single Course Session
-  ○ Target One Lesson
-  ○ Configure Courses
-  ○ Exit
+  Select StudyFlow mode:
+  ● Command Line Interface (Interactive menu)
+  ○ Web UI Dashboard
 ```
 
----
-
-## About
-
-StudyFlow is a productivity assistant that automates lecture management on Canvas LMS. Instead of manually tracking videos across courses, StudyFlow organizes your study workflow—so you spend less time managing dashboards and more time actually learning.
-
-**Perfect for students who:**
-- Have multiple Canvas courses with scattered video lectures
-- Want to stay on top of lecture completion without constant clicking
-- Need a simple, automated way to manage study organization
-- Prefer a hands-off approach to routine dashboard tasks
+### 2. Glassmorphism Web Dashboard
+A high-performance local dashboard running at `http://localhost:3000` with fluid layout animations, real-time progress fills, detailed statistics counters, responsive sidebar navigation, and a live dark terminal log stream.
 
 ---
 
-## Features
+## ✨ Features
 
-✨ **Smart Lecture Management**  
-Discovers and organizes video lectures across all your Canvas courses in one place.
-
-🤖 **Automated Workflow**  
-Handles routine lecture playback tasks without manual intervention.
-
-🎯 **Study Organization**  
-Keeps track of what you've watched and what's left to do.
-
-🌙 **Headless Mode**  
-Run silently in the background while you work or study.
-
-👁️ **Visible Mode**  
-Watch the process in real-time if you prefer transparency.
-
-🔒 **Privacy First**  
-Credentials stay on your machine. No cloud sync. No tracking.
-
-⚡ **Zero Technical Knowledge Required**  
-Simple menu-driven interface. No coding needed.
+- 🌐 **Bilingual (English & Korean)** — Native English & Korean (한국어) support across CLI menus, terminal guides, interactive prompts, and diagnostic utilities.
+- 🔄 **Sequential Course Sweep** — Scan and sequentially complete pending video modules across all enabled courses without manual navigation.
+- 🎯 **Targeted Watch Sessions** — Pick one specific course or direct your attention to a single selected video.
+- 💨 **Double Playback Speed** — Default standard 2.0x video playback stream to save maximum time.
+- 🕶️ **Seamless Background Operation** — Switch "Headless Mode" on to run your tasks silently in the background while you study.
+- 🔒 **Zero-Trust Security** — Student login details stay locally on your personal machine with strict file permissions (`0o600`).
+- ⚡ **Auto-SSO Integration** — Intelligent login workflows that bypass multi-step Single Sign-On authentications effortlessly.
 
 ---
 
-## Installation
+## 🚀 Simple Step-by-Step Installation
 
-Choose your operating system below and follow the steps:
+We designed StudyFlow to be simple, clean, and quick to set up—even if you have never touched a terminal or written a single line of code in your life.
 
 ---
 
-### 🪟 Windows
+### 1️⃣ Step 1: Install Node.js (Your system engine)
+StudyFlow requires a safe, secure, and completely free helper engine called **Node.js** to run.
+* **Windows Users**: 📥 [**Download Node.js Installer for Windows**](https://nodejs.org/dist/v20.12.2/node-v20.12.2-x64.msi)
+* **Mac Users**: 📥 [**Download Node.js Installer for Mac**](https://nodejs.org/dist/v20.12.2/node-v20.12.2.pkg)
+* **Linux Users**: Run `sudo apt update && sudo apt install -y nodejs npm` in your terminal.
 
-#### Step 1: Install Node.js
+> [!NOTE]
+> Once your download finishes, just double-click the file and click **"Next"** or **"Agree"** through the standard setup wizard. No custom configurations needed!
 
-**Option A: Using Winget (Recommended)**
-```bash
-winget install OpenJS.NodeJS.LTS
-```
+---
 
-**Option B: Manual Download**
-1. Visit [nodejs.org](https://nodejs.org)
-2. Click the green **"LTS"** button
-3. Double-click the `.msi` file that downloads
-4. Click **"Next"** through all prompts (keep defaults)
-5. Click **"Install"** and wait for completion
+### 2️⃣ Step 2: Open your Terminal / Command Window
+Now, open your computer's terminal to input a command:
+* 🪟 **On Windows**: Press the **Windows Key** on your keyboard, type **`cmd`**, and press **Enter** (this opens Command Prompt).
+* 🍎 **On Mac**: Press **Command (⌘) + Spacebar** at the same time, type **`Terminal`**, and press **Enter**.
 
-#### Step 2: Open PowerShell
+---
 
-1. Press the **Windows key** on your keyboard
-2. Type `PowerShell`
-3. Click **"Windows PowerShell"** to open
+### 3️⃣ Step 3: Install StudyFlow with 1 Command
+Copy the line of text below, paste it into your terminal/command window, and press **Enter**:
 
-#### Step 3: Install StudyFlow
+* **Windows Users**:
+  ```bash
+  npm install -g studyflow-bot
+  ```
+* **Mac & Linux Users**:
+  ```bash
+  sudo npm install -g studyflow-bot
+  ```
+*(This will securely install the StudyFlow assistant onto your local system. Installation will wrap up in about 30 seconds!)*
 
-```bash
-npm install -g studyflow-bot
-```
+---
 
-Wait for installation to complete (you'll see progress bars).
-
-#### Step 4: Launch
-
+### 4️⃣ Step 4: Launch and Log In!
+Type the command below in your terminal/command window and press **Enter**:
 ```bash
 studyflow
 ```
-
-Done! Follow the on-screen setup wizard.
-
----
-
-### 🍎 macOS (Intel & Apple Silicon)
-
-#### Step 1: Install Node.js
-
-**Option A: Using Homebrew (Recommended)**
-
-If you don't have Homebrew installed, first run:
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Then install Node.js:
-```bash
-brew install node
-```
-
-**Option B: Manual Download**
-1. Visit [nodejs.org](https://nodejs.org)
-2. Click the green **"LTS"** button
-3. Choose the macOS installer for your chip:
-   - **Intel Chip:** Download the `.pkg` file labeled "Intel"
-   - **Apple Silicon (M1/M2/M3):** Download the `.pkg` file labeled "Apple Silicon"
-4. Double-click the downloaded `.pkg` file
-5. Click **"Continue"** and follow the prompts
-6. Click **"Install"** and enter your Mac password if prompted
-
-#### Step 2: Open Terminal
-
-1. Press `Cmd + Space` on your keyboard
-2. Type `Terminal`
-3. Press `Enter`
-
-#### Step 3: Install StudyFlow
-
-```bash
-npm install -g studyflow-bot
-```
-
-Wait for installation to complete.
-
-#### Step 4: Launch
-
-```bash
-studyflow
-```
-
-Done! Follow the on-screen setup wizard.
+*   **🌐 Language First**: On your very first launch, choose either **English** or **한국어 (Korean)** to fit your comfort level.
+*   **🖥️ Choose Interface**: Select **Web UI Dashboard** or **Command Line Interface (CLI)** dynamically, with prompts rendered in your chosen language.
+*   **🎉 You are ready!** Enter your Canvas credentials securely when prompted, and let the assistant handle the heavy lifting!
 
 ---
 
-### 🐧 Linux
+## 🛠️ Commands Reference
 
-#### Step 1: Install Node.js
+If you prefer using terminal commands directly, StudyFlow comes with structured subcommands:
 
-**Ubuntu / Debian:**
-```bash
-sudo apt update
-sudo apt install -y nodejs npm
-```
-
-**Fedora / RHEL / CentOS:**
-```bash
-sudo dnf install -y nodejs npm
-```
-
-**Arch Linux:**
-```bash
-sudo pacman -S nodejs npm
-```
-
-**Other Distributions:**
-Visit the [Node.js package manager guide](https://nodejs.org/en/download/package-manager/) for your distro.
-
-#### Step 2: Install StudyFlow
-
-```bash
-npm install -g studyflow-bot
-```
-
-#### Step 3: Launch
-
-```bash
-studyflow
-```
-
-Done! Follow the on-screen setup wizard.
+| Command | Action |
+|---------|--------|
+| `studyflow` | Launches the interactive mode select wizard (CLI / Web Dashboard) |
+| `studyflow sweep` | Launches an automated sweep through all enabled courses |
+| `studyflow watch` | Prompts you to pick one course to watch sequentially |
+| `studyflow target` | Lets you choose one specific lesson unit |
+| `studyflow config` | Configure enabled/disabled course scopes |
+| `studyflow fetch-courses` | Syncs and caches your course rosters from Canvas |
 
 ---
 
-## Quick Start
+## 🔄 Updating & Uninstalling
 
-```bash
-# Launch StudyFlow
-studyflow
+### How to Update StudyFlow
+Keep your local installation updated to match any Canvas LMS layout changes:
+* **Windows**:
+  ```bash
+  npm update -g studyflow-bot
+  ```
+* **Mac & Linux**:
+  ```bash
+  sudo npm update -g studyflow-bot
+  ```
 
-# Follow the setup wizard:
-# 1. Enter your Canvas credentials
-# 2. Choose your preferred mode (headless or visible)
-# 3. Select lectures to manage
+### How to Uninstall StudyFlow
+To completely remove StudyFlow and wipe its temporary cache:
+1. Uninstall the global package:
+   * **Windows**:
+     ```bash
+     npm uninstall -g studyflow-bot
+     ```
+   * **Mac & Linux**:
+     ```bash
+     sudo npm uninstall -g studyflow-bot
+     ```
+2. (Optional) Wipe your configuration files:
+   * **Windows**: Delete `C:\Users\<YourUsername>\.config\studyflow`
+   * **Mac & Linux**: `rm -rf ~/.config/studyflow`
 
-# Stop anytime with:
-# Ctrl + C
+---
+
+## 🔒 Security & Privacy Architecture
+
+We built StudyFlow on the foundational principle that **your private student data belongs to you**.
+
+```mermaid
+graph TD
+  User((Student)) -->|Launches| CLI[StudyFlow CLI / Web UI]
+  CLI -->|Reads / Writes| Storage[(Local Disk Storage ~/.config/studyflow/)]
+  CLI -->|Controls| Browser[Playwright Chromium Instance]
+  Browser -->|Direct Authenticate| Institution[Your School SSO SSO/Canvas Server]
+  
+  style Storage fill:#181825,stroke:#a895ff,stroke-width:2px;
+  style Browser fill:#181825,stroke:#ff8fd6,stroke-width:2px;
+  style Institution fill:#111116,stroke:#ff7b7b,stroke-width:2px;
 ```
 
----
-
-## First-Time Setup
-
-### License Activation
-Enter your unique license key (provided by your institution).
-
-### Canvas Credentials
-- **Username:** Your Canvas student ID
-- **Password:** Your Canvas password (stored locally, never shared)
-
-### Browser Setup
-StudyFlow automatically downloads a lightweight browser engine on first run (~1-2 minutes). This is a one-time download.
-
-### Mode Selection
-Choose between:
-- **Headless (default):** Run in the background silently
-- **Visible:** See the browser window and watch the process
+- **Credential Isolation:** Credentials are encrypted and saved strictly on your local disk at `~/.config/studyflow/` with secure read/write boundaries.
+- **Direct Connection:** Authenticates directly with your university portal. Absolutely no middleman servers, APIs, proxies, or cloud synchronization.
+- **No Telemetry:** We collect zero analytics, metrics, or usage logs. Everything is offline-first.
 
 ---
 
-## Using StudyFlow
+## 📚 Troubleshooting
 
-### Headless vs Visible Mode
+#### "Command not found: studyflow"
+Ensure Node.js is on your system path. Close and reopen your terminal or command prompt, then run `npm install -g studyflow-bot` again.
 
-**Headless Mode** (Default)
-- Runs quietly in the background
-- Best for: Working on other tasks
-- Switch modes anytime via the menu
+#### "Playwright Browser Engine Missing"
+Upon your very first launch, StudyFlow will automatically configure a lightweight, isolated browser engine inside its cache directory. This is a one-time automated setup.
 
-**Visible Mode**
-- Browser window opens so you can watch
-- Best for: Troubleshooting or seeing what's happening
-- Toggle in the CLI menu: `👁️ Toggle Headless Mode`
-
-To switch modes:
-```bash
-studyflow
-# Navigate to: 👁️ Toggle Headless Mode
-# Press Enter
-```
-
-### Managing Credentials
-
-If you change your Canvas password:
-
-```bash
-studyflow
-# Navigate to: 🔑 Reset Session Credentials
-# Enter your new password
-```
-
-### Stopping StudyFlow
-
-```bash
-Ctrl + C
-```
-
-Safe to stop anytime. StudyFlow resumes exactly where it left off on the next run.
+#### Password change or credential failure
+Simply select the `🔑 Reset Session Credentials` option in the CLI or input your updated student account passwords in the Settings tab of the Web Dashboard.
 
 ---
 
-## Security & Privacy
+## ⚖️ Disclaimer
 
-**Your data stays on your computer.**
-
-| Aspect | Details |
-|--------|---------|
-| **Credential Storage** | Saved locally in `~/.config/studyflow/`. Never uploaded to cloud services. |
-| **Authentication** | Direct connection to your institution's Canvas server. No intermediaries. |
-| **No Telemetry** | StudyFlow doesn't track usage, collect analytics, or phone home. |
-| **No Cloud Sync** | Your credentials and data never leave your device. |
-| **Local Logs Only** | Activity logs stored locally on your machine. |
-| **Open Source** | Core code is publicly reviewable. No hidden backdoors or malware. |
-
----
-
-## Source Availability
-
-Parts of this project remain private to protect:
-- Licensing infrastructure and key validation
-- Backend authentication systems
-- Service configuration and credentials
-- Anti-abuse and fraud detection
-- API keys and security mechanisms
-
-**The npm package is fully public and functional.** You can install and use StudyFlow immediately. The private source code enables core infrastructure—the public package gives you everything you need.
-
----
-
-## npm Package
-
-**Package Name:** `studyflow-bot`  
-**Registry:** [npm.js](https://www.npmjs.com/package/studyflow-bot)
-
-```bash
-# Install
-npm install -g studyflow-bot
-
-# Update to latest
-npm install -g studyflow-bot@latest
-
-# Uninstall
-npm uninstall -g studyflow-bot
-```
-
----
-
-## CLI Commands
-
-All commands are accessed through the interactive menu system. No flags or complex syntax needed.
-
-```bash
-# Start StudyFlow
-studyflow
-
-# From the menu, you can:
-# • Start lecture management
-# • View course list
-# • Toggle headless/visible mode
-# • Reset credentials
-# • View settings
-# • Exit
-```
-
----
-
-## Troubleshooting
-
-**Q: How do I check if Node.js is installed?**  
-A: Run `node --version` in your terminal. You should see a version number like `v18.0.0` or higher.
-
-**Q: I get "command not found: studyflow"**  
-A: Node.js or npm wasn't installed properly. Try:
-- Windows: Close PowerShell and reopen it
-- macOS/Linux: Close Terminal and reopen it
-- Run `npm install -g studyflow-bot` again
-
-**Q: StudyFlow crashed. How do I recover?**  
-A: Just run `studyflow` again. It picks up exactly where it left off.
-
-**Q: I see "Access Denied: Invalid license key"**  
-A: Your license is invalid or expired. Contact your institution's administrator.
-
-**Q: I changed my password. What now?**  
-A: Launch StudyFlow and select `🔑 Reset Session Credentials`.
-
-**Q: Can I use StudyFlow on multiple computers?**  
-A: Yes. Each installation stores credentials locally on that computer.
-
-**Q: Does StudyFlow work offline?**  
-A: No. It needs an internet connection to authenticate and stream lectures.
-
-**Q: What if my institution uses a different LMS?**  
-A: StudyFlow currently supports Canvas only. Contact your administrator about other platforms.
-
-**Q: My Mac says "app can't be opened because it's from an unidentified developer"**  
-A: Right-click the file, click "Open," then click "Open" again in the popup.
-
-**Q: Why is some code private?**  
-A: See the [Source Availability](#source-availability) section above.
-
----
-
-## Planned Improvements
-
-We're working on:
-
-📊 **Study Dashboard**  
-Visual overview of lecture progress across all courses.
-
-🧠 **Smarter Lecture Detection**  
-Improved algorithms to identify and organize lectures.
-
-🔍 **Diagnostics Command**  
-Built-in troubleshooting tools for connection and setup issues.
-
-🎨 **Better Terminal UI**  
-Enhanced visual design and navigation.
-
-📅 **Calendar Integrations**  
-Sync lecture schedules with your calendar app.
-
----
-
-## Disclaimer
-
-**You are responsible for complying with your institution's Canvas LMS policies and academic integrity guidelines.**
-
-StudyFlow is a productivity tool designed to help manage your lecture workflow. Use it responsibly and in accordance with your institution's policies. Misuse may result in account suspension or academic consequences.
-
-**StudyFlow maintainers are not responsible for:**
-- Policy violations at your institution
-- Misuse of the tool
-- Data loss or system issues
-- Changes to Canvas LMS that break compatibility
-
-Always review your institution's acceptable use policy before using any automation tools.
-
----
-
-## Support & Links
-
-📦 [npm Package](https://www.npmjs.com/package/studyflow-bot)  
-🐙 [GitHub Repository](https://github.com/husky-696/StudyFlow)  
-📚 [Canvas LMS Docs](https://community.canvaslms.com/)  
-🔗 [Node.js](https://nodejs.org/)
+StudyFlow is a productivity tool meant to streamline and centralize dashboard workflows. Please use it responsibly and ensure your usage aligns with your academic institution's acceptable use policies, code of conduct, and academic integrity regulations. StudyFlow maintainers are not liable for any misuse, policy infractions, or custom Canvas LMS updates breaking current automation logic.
 
 ---
 
 <div align="center">
 
-**Made for students who value their time.**
+**Crafted with care for students who value their time.**
 
-[npm](https://www.npmjs.com/package/studyflow-bot) • [GitHub](https://github.com/husky-696/StudyFlow)
+[NPM Package Registry](https://www.npmjs.com/package/studyflow-bot) • [Source Code Repository](https://github.com/husky-696/StudyFlow)
 
 </div>
